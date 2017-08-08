@@ -1,67 +1,124 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Zilla+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Molengo|Work+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
     	<body>
-    <h1><strong>PERSONAL PROFILE:</strong></h1>
-    <P> ANNA C. JEONG</p>
-    <a href='https://photos.google.com/share/AF1QipP6moaZfxpujf-DmGY32bIIsxSdhIM_vN1Ygb1hOhvyTRUE31pL1wANegkq5IA0MA?key=V25IYlNqTk9ZQ2RDY2hJekRRdzFmZi1kMExRdHlB&source=ctrlq.org'><img src='https://lh3.googleusercontent.com/zOik5lPQnmdhPBB7Ht2OFBYuvyN8bTARkiaAnLgHDpooU9OPD8GOT0aOnyuQEJLxqF8fADoWOY6SHOs90tJO9Vj2RVaiz5qWKHqBr95qU332bpqDtj9ZHv0wB2BZwPNAytypT7Ei5A' alt="smiling girl" width=270px height=280 /></a>
+
+
+
+    <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+     <img src='https://lh3.googleusercontent.com/aDLknVODYSwzdEbaZIy1NMZVUZvLNUHBHuf7R4Qoy38yfnco5EOkhQcUZd-kUFhVXh37VH6dzz8Z-Q-fC4Mh6p5csd1DYNJTgsxAUZIEMN-9xpQxonaOabu4R2bwe4PmPmUWT46mgg' style="width:100%" height="500" width="1500">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src='https://lh3.googleusercontent.com/XcchO5FPlZ_SVrw-FqnCY9RV9uMpxCcCyKXo85bhOZSK47NP05epAMPy3vmrYZkCWHaT9iFPU3S9G_xryAj_s7cauLOJrX5yd_exvrsgTz5f_lTbe2HNSlbZa2b02y2fMJFzIzqb9g' style="width:100%" height="500" width="1500">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src='https://lh3.googleusercontent.com/-L5qKrQ_FJo1R93m2ECh9FtoKIom00Tv8Nvcjd2vMvRZRJCQ9O4aB4AdlN-BSFyYAlPTdn5TvG8f7bwprfnoHRiAX4xuVtX5b1_hCdwiWra1awr_wZfKKnbC8C520Fm9g5FwTL4y4w' style="width:100%" height="500" width="1500">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src='https://lh3.googleusercontent.com/HwZtjo5v1hp_UlIW_6_0OsOYet7C6w2M-RDpQH8orpKT6LkHTQNrwEE1XSc8GWmf2FO6sDy36kUITV6JKOR7pXrAql5ZCX5p9mGcUCZ5eEqI_xa4Q_alNqfm0DkeGecuJzdf4TNUbQ' style="width:100%" height="500" width="1500">
+  </div>
+
+
+
+  <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+
+<h1><strong>ANNA C. JEONG</strong></h1>
+
+
+
+
+
     <button class="accordion">BIO</button>
     <div class="panel">
-      <p>I am sixteen years old from Queens, New York.</p>
+      <p>I was born in South Korea and moved to the US with my family at the age of four.</p>
+      <p>I am currently a rising junior living in Queens, New York.</p>
     </div>
 
 
-    <button class="accordion">MY LIKES</button>
+    <button class="accordion">EXTRACURRICULARS</button>
     <div class="panel">
-      <p>Playing frisbee & other sports</p>
+      <p>Secretary of UNICEF Club</p>
+      <p>Varsity Lacrosse Team</p>
+      <p>Church Praise Team</p>
+      <p>Science Olympiad Team</p>
+    </div>
+
+    <button class="accordion">HOBBIES</button>
+    <div class="panel">
+      <p>Playing Guitar/ Piano and Singing</p>
+      <p>Walking With My Dog</p>
       <p>Reading</p>
-      <p>Bonding with my dog</p>
-      <p>Rewatching episodes of Goblin</p>
-      <p>Listening to music</p>
-      <p>Playing guitar and singing to praise songs</p>
-    </div>
-
-    <button class="accordion">MY DISLIKES</button>
-    <div class="panel">
-      <p>Bacon</p>
-      <p>Slugs</p>
-      <p>Homework</p>
-      <p>Foods with coconut in it</p>
-    </div>
-
-
-    <button class="accordion">FUN FACTS</button>
-    <div class="panel">
-      <p>#1)I love eating Korean soy bean noodles.</p>
-      <p>#2)I have double jointed elbows.</p>
-      <p>#3)I am a rising junior.</p>
+      <p>Reorganizing My Room</p>
+      <p>Collecting stationary</p>
     </div>
 
     <button class="accordion">LINKS TO MY FAVORITE WEBPAGES</button>
     <div class="panel">
       <p><a href="https://pupilpath.skedula.com/"/>Pupilpath</a></p>
-      <p><a href="https://www.facebook.com/?stype=lo&jlou=AfeVNtD-dR2JERLpOM4NeocD1NW-4QiOkH0Uf28mTa9JK56Pc4d9J-WxuihTqdmUakk0eyycX2885npzO8KqoaBvvz8brUy-b-bdZKLbyCB89Q&smuh=33080&lh=Ac_ml7qwr_obzP8H"/>Facebook</a></p>
-        <p><a href="http://127.0.0.1:8000/"/>BLOG</a></p>
+      <p><a href="https://www.google.com/"/>Google</a></p>
+        <p><a href="http://127.0.0.1:8000/"/>Aiko</a></p>
     </div>
 
-    <button class="accordion">SIDESCROLLER GAME</button>
+
+    <button class="accordion">FUN FACTS</button>
     <div class="panel">
+      <p>#1)At three months, I was a survivor of a car accident.</p>
+      <p>#2)I have double jointed elbows.</p>
+      <p>#3)I have a dog who is ten years old.</p>
+    </div>
+
+    <button class="accordion">WHERE TO CONTACT ME</button>
+    <div class="panel">
+      <p>Facebook</p>
+      <p>Instagram @banannaiko</p>
+    </div>
+
+    <button class="accordion"> MY GWC PROJECTS</button>
+    <div class="panel">
+      <p><em><strong>Sidescroller Project:</strong></em> Late for Graduation! In honor of the graduate who missed his special day due to subway delays...</p>
+      <p>Will you be able to make it to yours? Play this game to find out!</p>
+      <p>Accomplices: Tianna & Jessenia</p>
       <p><iframe allowtransparency="true" width="500" height="500" src="https://scratch.mit.edu/projects/embed/168598726/?autostart=false" frameborder="0" allowfullscreen/></iframe></p>
-      <p>Late for Graduation! In honor of the graduate who missed his special day due to subway delays...Will you be able to make it to yours? Play this game to find out! Accomplices:Tianna&Jessenia</p>
-    </div>
 
-    <button class="accordion">DANCING ROBOT</button>
-    <div class="panel">
+
+      <p><em><strong>Dancing Robot:</strong></em> Be Our Guest!</p>
+      <p> Accomplices: Sydney, Chloe, & Anissa</p>
       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/kus6HzEhqSE" frameborder="0" allowfullscreen/></iframe></p>
-      <p>Be Our Guest! Accomplices: Sydney, Chloe, & Anissa</p>
+
     </div>
-
-    <a><img src="https://s-media-cache-ak0.pinimg.com/736x/1c/92/91/1c9291e43fddb7eec34c3d6126de176c--nature-landscape-hd-wallpaper.jpg"  alt="waterfall" width=1200px height=500 /></a>
-
-
 
     <script>
     var acc = document.getElementsByClassName("accordion");
@@ -82,8 +139,10 @@
         }
 
     }
-}
-  </script>
+    }
+    </script>
+
+
 
 
 
